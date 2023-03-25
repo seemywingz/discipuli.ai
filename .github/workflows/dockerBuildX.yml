@@ -50,4 +50,4 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm/v7
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}.ai:${{ env.IMAGE_VERSION }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }}
