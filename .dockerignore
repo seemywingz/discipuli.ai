@@ -1,8 +1,9 @@
-
 # Directories
-# node_modules/
+.github/
+helm/
+node_modules/
 scripts/
 
 # Files
+.gitingore
 Dockerfile
-README.md

@@ -1,8 +1,11 @@
 
-FROM node:14.8.0
+FROM node:alpine3.16
 
 WORKDIR /app
 
 COPY  ./. $WORKDIR
+
+RUN npm install &&\
+  npm run dist
 
 ENTRYPOINT [ "node", "srv/server.js" ]
